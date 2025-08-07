@@ -1,3 +1,3 @@
-Reveal-footer
+# Reveal-footer
 
 Футер выезжающий из-под контента
