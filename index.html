@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reveal-footer</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page">
+  <main class="page__content content">
+    <section class="content__section">
+      <h2 class="content__title">Sticky Footer Reveal</h2>
+      <p class="content__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae fugiat quam non hic vel voluptate sit ex facere suscipit voluptatem odio quia, aspernatur perspiciatis esse culpa iure repellat corrupti.
+        Accusantium vero perferendis sit. Magni, quaerat neque! Sunt cupiditate ipsum nobis rem a assumenda beatae facere perferendis nam laudantium praesentium perspiciatis, natus ad, obcaecati iusto, quod dolores minus excepturi blanditiis.
+        Reprehenderit beatae sint incidunt veritatis ut, unde molestiae. Doloremque veniam suscipit animi aliquam excepturi, alias voluptate veritatis sed magni expedita sunt ipsam quia, sapiente est officia iure deserunt aperiam harum!
+        Voluptatibus culpa molestias rem iusto reprehenderit reiciendis corporis aut possimus quibusdam, sunt fugiat saepe, similique error praesentium illo iure blanditiis! Ipsam fugiat itaque asperiores temporibus quia ipsum unde optio sapiente!
+        Iure nulla nihil obcaecati officia dolorum, laudantium eveniet earum voluptate. Illum eaque nisi atque, saepe maiores ratione sapiente. Totam corrupti fugiat libero ipsa laborum et distinctio repellendus, tempora dolorem perferendis!
+        Eum laudantium perspiciatis, voluptates, quisquam alias earum ab nisi, debitis distinctio eaque harum libero! Atque nobis rerum corporis voluptatum fugit minus nulla voluptatem temporibus? Pariatur nostrum illum quos animi aliquid.
+        Ipsa, exercitationem. Numquam vel rerum dolore eius placeat, eos, officiis soluta sequi deleniti quae iusto suscipit ut quod cupiditate dolorum facilis modi quaerat! Dicta illum libero sunt eius eos voluptates?
+        Quia cumque, impedit provident exercitationem odit eaque repudiandae labore a temporibus minima unde autem, blanditiis, omnis neque quod sapiente placeat libero rem. Itaque, deleniti reiciendis sed quas ducimus ut repudiandae.
+        Animi similique, non odit ipsa, nobis nam incidunt est architecto dolore corrupti dignissimos beatae aut, error aperiam blanditiis nesciunt consequuntur voluptatem exercitationem pariatur. Neque delectus vitae voluptatibus obcaecati inventore nam?
+        Maiores saepe beatae voluptatem quasi exercitationem est, dolorum adipisci quod quia, a, numquam mollitia error explicabo. Nostrum tenetur ipsum accusamus maxime quae. Obcaecati itaque ex ipsam consequatur accusamus voluptas possimus.
+        Voluptatem porro nihil, nostrum, non laboriosam facilis ipsam possimus, magni quasi in repellendus ab praesentium dicta at tempora velit veritatis alias. Nisi culpa porro blanditiis quia nam magni perspiciatis impedit?
+        Exercitationem sapiente ullam quae tempore? Quidem ipsam eaque error? Exercitationem, laudantium iste vero itaque accusamus numquam commodi ad temporibus? Quos sit eum incidunt iste! Maxime, ipsam atque? Magnam, iure blanditiis.
+        Dolores voluptatibus temporibus minus ad aliquid reprehenderit similique voluptatum facere, repellendus beatae eos? Maxime facilis ducimus nam sapiente cumque iusto, aliquam tempora magni illum, voluptas nobis incidunt ipsam, mollitia nemo?
+        Eaque odit sed quibusdam, maiores odio aliquam laboriosam neque aperiam ut. Exercitationem recusandae nostrum, quasi illo, blanditiis quaerat temporibus odio reprehenderit quis, cupiditate dolorum ullam ducimus laboriosam quae debitis similique.
+        Harum iste vel et est a commodi repudiandae mollitia architecto tenetur nobis perspiciatis delectus ea modi, sed totam! Odit est sapiente voluptas tenetur perspiciatis modi, tempore reiciendis ratione corporis ad!
+        Aliquam, voluptate quisquam? Quos dolores ipsa consequatur officiis sit odit. Nihil autem quisquam qui debitis dolores non dolorem laudantium repellendus ratione eum! Dolorum pariatur eos, ea facere accusamus odit saepe.
+        Omnis nesciunt nobis iste quo a asperiores alias fuga excepturi. Adipisci magnam maxime, temporibus ad velit cupiditate expedita iure quas officia fugit corrupti quos quia, cum, voluptate sed maiores excepturi!
+        Adipisci quibusdam culpa repudiandae, inventore tempora sint, odio quia labore, dolor voluptate fugit aperiam in rerum quod. Id deleniti quibusdam unde et! Minus voluptatum incidunt sed enim, temporibus deserunt magnam.
+        Ipsa quos, nihil nesciunt aspernatur facere accusamus rerum quis possimus nobis porro architecto quisquam, ex suscipit. Recusandae quam voluptatum sunt fugit earum ducimus, aliquid exercitationem nulla voluptate voluptatem, fugiat atque?
+        Quae unde ea a incidunt temporibus, mollitia, dolore voluptates ex laboriosam cumque modi ab. Dicta mollitia, quo blanditiis error totam animi odio cum illum, esse sunt laudantium nostrum ipsum explicabo.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer__title">Sticky Footer Reveal</div>
+    <div class="footer__copy">© 2025 Все права защищены.</div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const footer = document.querySelector('#footer');
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            footer.classList.add('footer--visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      observer.observe(footer);
+    });
+  </script>
+</body>
+
+</html>
